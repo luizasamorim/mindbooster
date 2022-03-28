@@ -1,0 +1,102 @@
+body{
+    background-color: #2d294c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+/* ------- HEADER ------- */
+#header{
+    height: 70px;
+    background-color: #403d5c;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+
+        /*border-color: #ffffff;
+        border-style: solid;*/
+}
+/* LOGO */
+#logo{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    
+       /*border-color: red;
+        border-style: solid;*/
+}
+#logo img{
+    width: 30px;
+
+        /*border-color: #ffffff;
+        border-style: solid;*/
+}
+#logo h1{
+    display: inline;
+    margin-left: 10px;
+
+       /*border-color: green;
+        border-style: solid;*/
+}
+/* MENU */
+#menu{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+        /*border-color: pink;
+        border-style: solid;*/
+}
+#menu li{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 16px;
+        
+        /*border-color: pink;
+        border-style: solid;*/
+}
+#menu a{
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+
+/* ------- BODY ------- */
+#body{
+    align-items: center;
+    text-align: center;
+
+        /*border-color: #ffffff;
+        border-style: solid;*/
+}
+#body h1{
+    color: #746ace;
+    font-size: 50px;
+    margin-top: 60px;
+    margin-bottom: 0;
+
+        /*border-color: #ffffff;
+        border-style: solid;*/
+}
+#body h2{
+    color: #e0e0e0;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 10px;
+    font-weight: 400;
+
+        /*border-color: #ffffff;
+        border-style: solid;*/
+}
+p{
+    color: #e0e0e0;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: Verdana;
+}
+
+.question{
+    color: #d5ff26;
+    font-weight: 500;
+}
+
+
