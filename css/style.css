@@ -11,48 +11,32 @@ body{
     color: #e0e0e0;
     display: flex;
     justify-content: space-between;
-
-        /*border-color: #ffffff;
-        border-style: solid;*/
 }
 /* LOGO */
 #logo{
-    font-size: 10px;
-    display: flex;
     align-items: center;
     margin-left: 30px;
-    
-       /*border-color: red;
-        border-style: solid;*/
 }
 #logo img{
+    display: inline-block;
     width: 30px;
-
-        /*border-color: #ffffff;
-        border-style: solid;*/
+    padding: 20px 0;
 }
 #logo h1{
-    display: inline;
+    display: inline-block;
     margin-left: 10px;
-
-       /*border-color: green;
-        border-style: solid;*/
+    font-size: 20px;
+    padding: 20px 0;
 }
 /* MENU */
 #menu{
-    display: flex;
-    align-items: center;
     margin-right: 30px;
-        /*border-color: pink;
-        border-style: solid;*/
 }
 #menu li{
+    padding: 20px 0;
     display: inline-block;
     margin-left: 20px;
     font-size: 16px;
-        
-        /*border-color: pink;
-        border-style: solid;*/
 }
 #menu a{
     color: #e0e0e0;
@@ -61,42 +45,69 @@ body{
 
 
 /* ------- BODY ------- */
+/* TÍTULOS */
 #body{
     align-items: center;
     text-align: center;
-
-        /*border-color: #ffffff;
-        border-style: solid;*/
 }
 #body h1{
     color: #746ace;
     font-size: 50px;
     margin-top: 60px;
     margin-bottom: 0;
-
-        /*border-color: #ffffff;
-        border-style: solid;*/
 }
 #body h2{
     color: #e0e0e0;
     font-size: 30px;
     font-family: "Open Sans", sans-serif;
     margin-top: 10px;
+    margin-bottom: 50px;
     font-weight: 400;
-
-        /*border-color: #ffffff;
-        border-style: solid;*/
 }
-p{
+
+/* CARDS */
+.question{
     color: #e0e0e0;
     font-size: 18px;
     font-weight: 900;
     font-family: Verdana;
+    margin-bottom: 10px;
+    position: relative;
+    right: 275px;
 }
-
-.question{
+.card{
+    height: 250px; 
+    width: 200px;
+    border-radius: 20px;
+    position: relative;
+}
+.card-title{
+    font-size: 30px;
+}
+.left{
+    left: 300px;
+}
+.left .card-title{
+    vertical-align: middle;
+    padding: 50% 0;
+}
+.right .card-title{
+    vertical-align: middle;
+    padding: 15% 0;
+}
+.click{
     color: #d5ff26;
     font-weight: 500;
+    position: absolute;
+    top: 380px;
+    left: 120px;
+}
+.click img{
+    width: 60%;
 }
 
+.arrow img{
+    width: 100px;
+    display: inline-block;
+}
 
