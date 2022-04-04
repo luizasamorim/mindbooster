@@ -15,43 +15,38 @@
         </div>
         <div id="menu">
             <ul>
-                <li><a href="./cadastro.html">Cadastre-se</a></li>
+                <li><a href="">Cadastre-se</a></li>
                 <li><a href=""><b>Entrar</b></a></li>
             </ul>
         </div>
     </div>
     <div id="body">
         <div>
-            <h1>Mind Booster</h1>
+            <h1>Cadastre-se</h1>
             <h2>
-                Treine a sua memória com Flashcards!
+                Com a sua conta, você poderá gerenciar suas coleções de flash cards.
             </h2>
         </div>
         
-        <div class="question">
-            Como se chama carro em inglês?
-        </div>
-        <!--
-        <div class="card text-center left">
-            <div class="card-body">
-                <h5 class="card-title">Carro</h5>
-            </div>
-        </div>
-        -->
-            <div class="click">
-            <div>Clique no cartão <br> para descobrir</div>
-            <img src="../assets/index_arrow.png">
-        </div>
-        <div class="arrow">
-            <img src="../assets/index_arrow2.png">
-        </div>
+        <div id="cadastro">
+            <form action="">
+                <label for="name">Nome</label> <br>
+                <input type="text" id="name" placeholder="Insira o seu name completo"> <br>
+
+                <label for="email">Email</label> <br>
+                <input type="text" id="email" placeholder="Insira o seu e-mail"> <br>
+
+                <label for="pass">Senha</label> <br>
+                <input type="text" id="pass"> <br>
+                <div class="caption" id="rules">Use ao menos 8 caracteres contendo letras, números e ao menos um caracter especial</div>
+
+                <label for="confirmation">Repetir a senha</label> <br>
+                <input type="text" id="confirmation"> <br>
+                <div class="caption" id="wrongpass">Senha não confere</div>
+
+                <input type="submit" value="Cadastrar"  class="btn btn-primary">
         
-        <div class="card text-center right">
-            <div class="card-body">
-                <h5 class="card-title">Carro</h5>
-                <hr class="solid">
-                <h5 class="card-title">Car</h5>
-            </div>
+            </form>
         </div>
     </div>
 </body>

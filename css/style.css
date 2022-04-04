@@ -27,6 +27,8 @@ body{
     margin-left: 10px;
     font-size: 20px;
     padding: 20px 0;
+    text-decoration: none;
+    color: #e0e0e0;
 }
 /* MENU */
 #menu{
@@ -52,16 +54,16 @@ body{
 }
 #body h1{
     color: #746ace;
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 60px;
     margin-bottom: 0;
 }
 #body h2{
     color: #e0e0e0;
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Open Sans", sans-serif;
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 400;
 }
 
@@ -111,3 +113,37 @@ body{
     display: inline-block;
 }
 
+/*---------------- CADASTRO ---------------*/
+#cadastro{
+    color: #e0e0e0;
+    text-align: left;
+    width: 500px;
+    margin: 0 auto;
+}
+label{
+    margin-top: 10px;
+}
+input{
+    width: 500px;
+}
+.caption{
+    font-size: 10px;
+    color: #e0e0e0;
+}
+#rules{
+    opacity: 0.5;
+}
+#wrongpass{
+    color: red;
+}
+.btn{
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    background-color: #5e5796;
+    border: none;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: #746ace;
+}
