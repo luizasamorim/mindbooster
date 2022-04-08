@@ -4,6 +4,12 @@ body{
     margin: 0;
 }
 
+/*
+elementos puros
+elementos gerais
+elementos específicos
+*/
+
 /* ------- HEADER ------- */
 #header{
     height: 70px;
@@ -115,7 +121,7 @@ body{
 
 /*---------------- CADASTRO ---------------*/
 #form{
-    color: #e0e0e0;
+    color: #ffffff;
     text-align: left;
     width: 500px;
     margin: 0 auto;
@@ -148,7 +154,7 @@ input{
 .btn:hover{
     background-color: #746ace;
 }
-#collection{
+#newcollection{
     width: 150px;
     margin-top: 70px;
     margin-right: 70px;
@@ -163,3 +169,53 @@ h5{
     position: absolute;
     bottom: 0;
 }
+
+
+/* COLEÇÕES */
+.pagetitle{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 20px;
+}
+.subtitle{
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.inputs{
+    border-radius: 5px;
+    border-style: none;
+}
+textarea{
+    border-radius: 5px;
+    border-style: none;
+}
+#icon{
+    width: 400px;
+    height: 27px;
+    border-style: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#icon::-webkit-input-placeholder{
+    opacity: 0.8;
+    font-size: 15px;
+    padding-left: 15px;
+}
+.inputs::-webkit-input-placeholder{
+    padding-left: 15px;
+}
+.browse{
+    float: right;
+    width: 95px;
+    font-size: 16px;
+    padding: 1.5px;
+    margin-right: 5px;
+    border-style: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
