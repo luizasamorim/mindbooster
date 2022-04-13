@@ -129,9 +129,7 @@ elementos específicos
 label{
     margin-top: 10px;
 }
-input{
-    width: 500px;
-}
+
 .caption{
     font-size: 10px;
     color: #e0e0e0;
@@ -173,9 +171,9 @@ h5{
 
 /* COLEÇÕES */
 .pagetitle{
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 900;
     color: #ffffff;
     font-size: 20px;
@@ -188,6 +186,7 @@ h5{
 .inputs{
     border-radius: 5px;
     border-style: none;
+    width: 500px;
 }
 textarea{
     border-radius: 5px;
@@ -218,4 +217,42 @@ textarea{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+.editar{
+    width: 200px;
+}
 
+.nomecolecao{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+}
+
+.busca{
+    width: 1200px;
+    margin-left: 50px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.lupa{
+    background-color: #e0e0e0;
+    border-style: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.barra{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-style: none;
+    height: 40px;
+}
