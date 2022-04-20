@@ -36,6 +36,10 @@ elementos específicos
     text-decoration: none;
     color: #e0e0e0;
 }
+
+.card-body {
+    padding: 0
+}
 /* MENU */
 #menu{
     margin-right: 30px;
@@ -86,7 +90,7 @@ elementos específicos
 .card{
     height: 250px; 
     width: 200px;
-    border-radius: 20px;
+    border-radius: 10px;
     position: relative;
 }
 .card-title{
@@ -152,6 +156,14 @@ label{
 .btn:hover{
     background-color: #746ace;
 }
+.btn::backdrop{
+    background-color: #746ace;
+}
+
+
+/* HOME */
+
+
 #newcollection{
     width: 150px;
     margin-top: 70px;
@@ -159,15 +171,40 @@ label{
 }
 .cards{
     width: 1000px;
-    margin: 50px auto 0 auto;
+    margin: 50px auto 0 auto;  
 }
-h5{
+/*elementos de dentro do card*/
+.lateral{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.centro{
+    width: 70%;
+}
+.cardPic{
+    height: 80%;
+}
+.pic{
+    margin: auto 0;
+}
+/*alinhar texto vertical e horizontal*/ 
+.collText{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.text{
     color: #27ACA7;
     font-weight: 900;
+    font-size: 100%;
     position: absolute;
-    bottom: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
-
 
 /* COLEÇÕES */
 .pagetitle{
@@ -221,9 +258,16 @@ textarea{
     width: 200px;
 }
 
+
+
+
+/*CARTOES*/
+.listacards{
+    width: 95%;
+    margin: 0 auto;
+}
 .nomecolecao{
     margin-top: 40px;
-    margin-left: 50px;
     margin-bottom: 30px;
     font-weight: 900;
     color: #ffffff;
@@ -232,8 +276,6 @@ textarea{
 }
 
 .busca{
-    width: 1200px;
-    margin-left: 50px;
     display: flex;
     align-items:center;
     justify-content:center;
@@ -256,3 +298,34 @@ textarea{
     border-style: none;
     height: 40px;
 }
+#newcard{
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+#cards{
+    margin: 20px auto;
+}
+#cards ul{
+    margin: 0;
+    padding: 0;
+}
+#cards li{
+    display: block;
+    text-align: left;
+    background-color: #ffffff;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #707070;
+}
+#jogar{
+    background-color: #57966A;
+}
+
+.cards .card{
+    margin: 20px 20px 20px 20px;
+}
+
