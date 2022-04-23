@@ -12,7 +12,7 @@
     <div id="header">
         <div id="logo">
             <img id="img" src="../assets/index_brain.png">
-            <h1>QI Labs</h1>
+            <a href="./home.html"><h1>QI Labs</h1></a>
         </div>
         <div id="menu">
             <ul>
@@ -30,13 +30,30 @@
         <div class="subtitle">
             Preencha os dados da frente e do verso do flashcard
         </div>
-        <div class="card text-center right">
-            <div class="card-body">
-                <h5 class="card-title">Carro</h5>
-                <hr class="solid">
-                <h5 class="card-title">Car</h5>
-            </div>
-        </div>
+        <form action="">
+            <div class="card cardalign">
+                <div class="card-body d-flex flex-column insidecard">
+                    <div class="frente">
+                        Frente
+                    </div>
+                    <div class="dividedcard centrovertical">
+                        <div>
+                            <input type="text" value="" class="word" placeholder="exemplo">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="verso">
+                        Verso
+                    </div>
+                    <div class="dividedcard centrovertical">
+                        <div>
+                            <input type="text" value="" class="word" placeholder="exemplo">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <input type="submit" value="Cadastrar"  class="btn btn-primary">
+        </form>
     </div>
 </body>
 </html>

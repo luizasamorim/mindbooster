@@ -77,50 +77,52 @@ elementos específicos
     font-weight: 400;
 }
 
-/* CARDS */
+/* INDEX */
+.outer{
+    width: 750px;
+    margin: 70px auto 0 auto;
+}
 .question{
     color: #e0e0e0;
     font-size: 18px;
     font-weight: 900;
     font-family: Verdana;
+    text-align: left;
     margin-bottom: 10px;
-    position: relative;
-    right: 275px;
 }
+.w5{
+    width: 6%;
+}
+.carro{
+    font-size: 30px;
+    color: #4B5366;
+}
+.invisible{
+    display: none;
+    opacity: 0;
+}
+.click{
+    width: 250px;
+    color: #d5ff26;
+    font-weight: 900;
+    position: absolute;
+    top: 360px;
+    left: 100px;
+}
+.click img{
+    width: 50%;
+    float: right;
+}
+.arrow img{
+    width: 150px;
+    display: inline-block;
+}
+/*--------------*/
 .card{
     height: 250px; 
     width: 200px;
     border-radius: 10px;
     position: relative;
-}
-.card-title{
-    font-size: 30px;
-}
-.left{
-    left: 300px;
-}
-.left .card-title{
-    vertical-align: middle;
-    padding: 50% 0;
-}
-.right .card-title{
-    vertical-align: middle;
-    padding: 15% 0;
-}
-.click{
-    color: #d5ff26;
-    font-weight: 500;
-    position: absolute;
-    top: 380px;
-    left: 120px;
-}
-.click img{
-    width: 60%;
-}
-
-.arrow img{
-    width: 100px;
-    display: inline-block;
 }
 
 /*---------------- CADASTRO ---------------*/
@@ -162,8 +164,6 @@ label{
 
 
 /* HOME */
-
-
 #newcollection{
     width: 150px;
     margin-top: 70px;
@@ -323,7 +323,7 @@ textarea{
     justify-content: space-between;
 }
 
-#jogar{
+.jogar{
     background-color: #57966A;
 }
 
@@ -335,3 +335,71 @@ textarea{
     width: 25px;
 }
 
+/* NOVO CARTÃO */
+.cardalign{
+    margin: 0 auto;
+}
+.insidecard{
+    padding: 10px;
+}
+.dividedcard{
+    height: 40%;
+}
+hr{
+    margin: 0;
+    border-top: 2px dotted grey;
+    background-color: inherit; 
+}
+.frente{
+    color: grey; 
+    font-size: 12px; 
+    text-align: left;
+}
+.verso{
+    color: grey; 
+    font-size: 12px; 
+    text-align: left;
+}
+.word{
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: center;
+}
+.word:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.centrovertical{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*JOGAR*/
+.mg-bottom{
+    margin-bottom: 10px;
+}
+.mg-top{
+    margin-top: 270px;
+}
+.dividedgame{
+    height: 50%;
+}
+#frente{
+    position: absolute;
+    z-index: 1;
+}
+#verso{
+    position: absolute;
+    z-index: 0;
+}
+
+
+
+
+
+.bdt{
+    border-color: aliceblue; 
+    border-style: solid;
+}
