@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <script>
+            window.onload = function() {
+
+                var url = new URL(window.location.href)
+                var URLFormatter = new URLSearchParams(url.search)
+                console.log(URLFormatter.get("id"))
+            }
+
+            // Seleciona o elemento no DOM
+var $wrapper = document.querySelector('.wrapper'),
+ 
+ // Cria uma string de texto
+ HTMLNovo = document.createTextNode('Inserido usando DOM API'),
+
+ // Cria um "fragmento de documento" oO
+ fragment = new DocumentFragment();
+
+// Insere no fragmento o novo texto
+fragment.appendChild(HTMLNovo);
+
+// Insere no documento o br
+fragment.appendChild(document.createElement('br'));
+
+// Insere o fragmento antes do conteúdo atual do elemento
+$wrapper.insertBefore(fragment, $wrapper.firstChild);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
