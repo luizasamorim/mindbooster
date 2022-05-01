@@ -29,6 +29,23 @@
         <div id="listacolecoes" class="d-flex flex-row mb-3 cards flex-wrap">
                     
         </div>
+        <div class="modal fade" id="modalExclusao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position: absolute;">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Exclusão</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Tem certeza que deseja remover essa coleção? Isso excluirá todos os cartões contidos nela.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary trash">Sim</button>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
 
     <script src="../js/home.js"></script>

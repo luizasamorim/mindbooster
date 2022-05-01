@@ -1,5 +1,21 @@
 window.onload = function () {
     listacolecoes()
+    var btneditarcol = document.getElementsByClassName("pencil")
+    for(var i = 0; i < btneditarcol.length; i++) {
+        var anchor = btneditarcol[i];
+        anchor.onclick = function() {
+            editarcolecao(0)
+        }
+    }
+    var btndeletarcol = document.getElementsByClassName("trash")
+    for(var i = 0; i < btndeletarcol.length; i++) {
+        var anchor = btndeletarcol[i];
+        anchor.onclick = function() {
+            var listaColecoes = JSON.parse(localStorage.getItem("listaColecoes"))
+            alert(listaColecoes)
+            deletarcolecao(3)
+        }
+    }
 }
 
 function novacolecao() {
@@ -38,7 +54,8 @@ function listacolecoes() {
                         
                             var h5 = document.createElement("h5")
                             h5.classList.add("text")
-                            h5.innerHTML = JSON.stringify(listaColecoes[i].nome)
+                            var aspas = JSON.stringify(listaColecoes[i].nome)
+                            h5.innerHTML = removeaspas(aspas)
 
                         div4.appendChild(h5)
 
@@ -53,15 +70,17 @@ function listacolecoes() {
                         img2.srcset = "../assets/pencil.png"
 
                         var img3 = document.createElement("img")
-                        img3.classList.add("actions", "trash")
+                        img3.classList.add("actions")
+                        img3.setAttribute("data-bs-toggle","modal")
+                        img3.setAttribute("data-bs-target", "#modalExclusao")
                         img3.srcset = "../assets/trash.png"
 
                     div6.appendChild(img2)
                     div6.appendChild(img3)
 
-                div7.appendChild(div6)
-                div7.appendChild(div3)
                 div7.appendChild(div5)
+                div7.appendChild(div3)
+                div7.appendChild(div6)
 
             div1.appendChild(div7)
             
@@ -71,16 +90,28 @@ function listacolecoes() {
     });
 }
 
-
-
-
-function editarcolecao(){
-    window.location = '../html/editarcolecao.html';
+function editarcolecao(index){
+    window.location = '../html/editarcolecao.html?index=' + index;
 }
-function deletarcolecao(){
-    //
+
+function deletarcolecao(ind){
+    var listaColecoes = JSON.parse(localStorage.getItem("listaColecoes"))
+
+    var filtrado = listaColecoes.filter(function(value, index, arr) {
+        return index != ind
+    })
+    alert(JSON.stringify(filtrado))
+    localStorage.setItem("listaColecoes", JSON.stringify(filtrado))
+
+    window.location.reload()
 }
 
 function mostrarcolecao() {
+    window.location = '../html/editarcolecao.html?index=' + index;
+}
+
+function removeaspas(replace) {
+    replace = replace.replace('"', "")
+    return replace.substring(0, replace.length - 1) 
     
 }
