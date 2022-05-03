@@ -146,6 +146,9 @@ label{
 #wrongpass{
     color: red;
 }
+.red{
+    color: red;
+}
 .btn{
     width: 120px;
     display: block;

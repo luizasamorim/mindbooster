@@ -14,9 +14,11 @@ function cadastrarcolecao() {
     var descricao = document.getElementById("desc").value
     
     listaColecoes = JSON.parse(localStorage.getItem("listaColecoes"))
-    var len = listaColecoes.length
-    
-    var col = {"index": len, "nome": name, "descricao": descricao}
+
+    // var len = listaColecoes.length
+    // var col = {"index": len, "nome": name, "descricao": descricao}
+
+    var col = {"nome": name, "descricao": descricao}
 
     ///alert(JSON.stringify(col))
 

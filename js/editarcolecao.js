@@ -19,6 +19,10 @@ function editarcolecao(ind) {
     listaColecoes.splice(ind, 1, {"nome" : name, "descricao" : descricao})
     
     localStorage.setItem("listaColecoes", JSON.stringify(listaColecoes))
+
+    window.location = '../html/home.html'
+
+    //window.location.reload()
 }
 
 

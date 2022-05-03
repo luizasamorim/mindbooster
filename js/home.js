@@ -12,10 +12,16 @@ window.onload = function () {
         var anchor = btndeletarcol[i];
         anchor.onclick = function() {
             var listaColecoes = JSON.parse(localStorage.getItem("listaColecoes"))
-            alert(listaColecoes)
-            deletarcolecao(3)
+            deletarcolecao(0)
         }
     }
+    /*var btncolecao = document.getElementsByClassName("card-body")
+    for(var i = 0; i < btncolecao.length; i++) {
+        var anchor = btncolecao[i];
+        anchor.onclick = function() {
+            window.location = '../html/cartoes.html?index=' + 0;
+        }
+    }*/
 }
 
 function novacolecao() {
@@ -100,7 +106,7 @@ function deletarcolecao(ind){
     var filtrado = listaColecoes.filter(function(value, index, arr) {
         return index != ind
     })
-    alert(JSON.stringify(filtrado))
+    
     localStorage.setItem("listaColecoes", JSON.stringify(filtrado))
 
     window.location.reload()
